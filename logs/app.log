@@ -1130,3 +1130,371 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2019-06-25 at 10:45:59 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 202 start - Tomcat started on port(s): 8080 (http) with context path ''
 2019-06-25 at 10:45:59 CST INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started DoilikeProApplication in 1.054 seconds (JVM running for 779.236)
 2019-06-25 at 10:45:59 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2019-06-25 at 14:20:22 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 5272 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 14:20:23 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 14:20:23 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 14:20:23 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 14:20:25 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$dec91cd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 14:20:26 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 14:20:26 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 14:20:26 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 14:20:27 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$cfa5bc4]: Constructor threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': Could not bind properties to 'MultipartProperties' : prefix=spring.servlet.multipart, ignoreInvalidFields=false, ignoreUnknownFields=false; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize
+2019-06-25 at 14:20:27 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 14:20:27 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize:
+
+    Property: spring.servlet.multipart.max-file-size
+    Value: 30mb
+    Origin: class path resource [application-pro.yml]:21:22
+    Reason: failed to convert java.lang.String to org.springframework.util.unit.DataSize
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:51:51 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 6160 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:51:51 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:51:51 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:51:51 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:51:53 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$3954baf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:51:54 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:51:54 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:51:54 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:51:55 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$6785f9e5]: Constructor threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': Could not bind properties to 'MultipartProperties' : prefix=spring.servlet.multipart, ignoreInvalidFields=false, ignoreUnknownFields=false; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize
+2019-06-25 at 15:51:55 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:51:55 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize:
+
+    Property: spring.servlet.multipart.max-file-size
+    Value: 30mb
+    Origin: class path resource [application-pro.yml]:21:22
+    Reason: failed to convert java.lang.String to org.springframework.util.unit.DataSize
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:52:39 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 5724 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:52:39 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:52:39 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:52:39 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:52:41 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$d4fc8bcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:52:42 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:52:42 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:52:42 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:52:43 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$32dcabf]: Constructor threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': Could not bind properties to 'MultipartProperties' : prefix=spring.servlet.multipart, ignoreInvalidFields=false, ignoreUnknownFields=false; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize
+2019-06-25 at 15:52:43 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:52:43 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize:
+
+    Property: spring.servlet.multipart.max-file-size
+    Value: 30mb
+    Origin: class path resource [application-pro.yml]:20:22
+    Reason: failed to convert java.lang.String to org.springframework.util.unit.DataSize
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:53:53 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 13264 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:53:53 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:53:53 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:53:53 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:53:56 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$3935660a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:53:57 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:53:57 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:53:57 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:53:57 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$6766a4fa]: Constructor threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': Could not bind properties to 'MultipartProperties' : prefix=spring.servlet.multipart, ignoreInvalidFields=false, ignoreUnknownFields=false; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize
+2019-06-25 at 15:53:57 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:53:57 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize:
+
+    Property: spring.servlet.multipart.maxfilesize
+    Value: 30mb
+    Origin: class path resource [application-pro.yml]:20:20
+    Reason: failed to convert java.lang.String to org.springframework.util.unit.DataSize
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:54:49 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 7804 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:54:49 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:54:50 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:54:50 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:54:52 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$61b88be1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:54:53 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:54:53 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:54:53 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:54:53 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$8fe9cad1]: Constructor threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': Could not bind properties to 'MultipartProperties' : prefix=spring.servlet.multipart, ignoreInvalidFields=false, ignoreUnknownFields=false; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize
+2019-06-25 at 15:54:53 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:54:53 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.servlet.multipart.max-file-size' to org.springframework.util.unit.DataSize:
+
+    Property: spring.servlet.multipart.maxfilesize
+    Value: 30mb
+    Origin: class path resource [application-pro.yml]:20:20
+    Reason: failed to convert java.lang.String to org.springframework.util.unit.DataSize
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:55:34 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 1332 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:55:34 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:55:34 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:55:34 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:55:36 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$f561b900] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:55:37 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:55:37 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:55:37 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:55:38 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 15:55:38 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 15:55:38 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 15:55:38 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 15:55:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 15:55:39 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4909 ms
+2019-06-25 at 15:55:40 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+2019-06-25 at 15:55:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2019-06-25 at 15:55:40 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:55:40 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application-pro.yml]:10:14
+    Reason: org.apache.log4j.Priority
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:57:12 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 11328 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:57:12 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:57:12 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:57:12 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:57:15 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$22aed9e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:57:16 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:57:16 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:57:16 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:57:17 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 15:57:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 15:57:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 15:57:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 15:57:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 15:57:17 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4991 ms
+2019-06-25 at 15:57:18 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+2019-06-25 at 15:57:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2019-06-25 at 15:57:18 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:57:18 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application-pro.yml]:10:14
+    Reason: org.apache.log4j.Priority
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:57:55 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 8628 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:57:55 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:57:55 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:57:55 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:57:58 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$bdea21eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:57:58 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:57:58 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:57:58 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:57:59 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 15:57:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 15:57:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 15:57:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 15:58:00 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 15:58:00 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4753 ms
+2019-06-25 at 15:58:00 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+2019-06-25 at 15:58:00 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2019-06-25 at 15:58:00 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:58:00 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application-pro.yml]:10:14
+    Reason: org.apache.log4j.Priority
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 15:59:24 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 5516 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 15:59:24 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 15:59:24 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 15:59:24 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 15:59:26 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$dfafe43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:59:27 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 15:59:27 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 15:59:27 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 15:59:29 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 15:59:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 15:59:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 15:59:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 15:59:30 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 15:59:30 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5754 ms
+2019-06-25 at 15:59:30 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+2019-06-25 at 15:59:30 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2019-06-25 at 15:59:30 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 15:59:30 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application-pro.yml]:10:14
+    Reason: org.apache.log4j.Priority
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 16:00:44 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 10220 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 16:00:44 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 16:00:44 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 16:00:44 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 16:00:47 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$72b0413b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 16:00:48 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 16:00:48 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 16:00:48 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 16:00:49 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 16:00:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 16:00:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 16:00:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 16:00:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 16:00:50 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5917 ms
+2019-06-25 at 16:00:51 CST WARN  org.springframework.context.support.AbstractApplicationContext 557 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+2019-06-25 at 16:00:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2019-06-25 at 16:00:51 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 135 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-25 at 16:00:51 CST ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 40 report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application-pro.yml]:10:14
+    Reason: org.apache.log4j.Priority
+
+Action:
+
+Update your application's configuration
+
+2019-06-25 at 16:01:03 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting DoilikeProApplication on DESKTOP-7HUK2N4 with PID 9988 (D:\javaTools\doilikePro\target\classes started by xqsoft in D:\javaTools\doilikePro)
+2019-06-25 at 16:01:03 CST INFO  org.springframework.boot.SpringApplication 650 logStartupProfileInfo - The following profiles are active: pro
+2019-06-25 at 16:01:04 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-25 at 16:01:04 CST INFO  org.springframework.boot.logging.DeferredLog 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-25 at 16:01:06 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'shiroConfig' of type [com.iwant.doilikePro.config.ShiroConfig$$EnhancerBySpringCGLIB$$24a5b03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 16:01:07 CST INFO  com.iwant.doilikePro.config.ShiroConfig 40 securityManager - ====securityManager注册完成====
+2019-06-25 at 16:01:07 CST INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 postProcessAfterInitialization - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-25 at 16:01:07 CST INFO  com.iwant.doilikePro.config.ShiroConfig 82 shiroFilter - ====shiroFilterFactoryBean注册完成====
+2019-06-25 at 16:01:08 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 90 initialize - Tomcat initialized with port(s): 8080 (http)
+2019-06-25 at 16:01:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 16:01:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2019-06-25 at 16:01:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-25 at 16:01:09 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2019-06-25 at 16:01:09 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 283 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5190 ms
+2019-06-25 at 16:01:09 CST INFO  com.iwant.doilikePro.config.ExecutorConfig 41 asyncServiceExecutor - start asyncServiceExecutor
+2019-06-25 at 16:01:09 CST INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService
+2019-06-25 at 16:01:09 CST INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService 'asyncServiceExecutor'
+2019-06-25 at 16:01:09 CST INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService
+2019-06-25 at 16:01:09 CST INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 171 initialize - Initializing ExecutorService 'mySimpleAsync'
+2019-06-25 at 16:01:11 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 57 startServer - LiveReload server is running on port 35729
+2019-06-25 at 16:01:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-25 at 16:01:11 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 202 start - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-25 at 16:01:11 CST INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started DoilikeProApplication in 8.803 seconds (JVM running for 10.817)

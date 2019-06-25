@@ -45,6 +45,39 @@
 		    <artifactId>shiro-spring</artifactId>
 		    <version>1.3.2</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<!-- 文件上传 -->
+		<dependency>
+		     <groupId>commons-fileupload</groupId>
+		     <artifactId>commons-fileupload</artifactId>
+		     <version>1.3.1</version>
+		 </dependency>
+		 <dependency>
+		     <groupId>commons-io</groupId>
+		     <artifactId>commons-io</artifactId>
+		     <version>2.4</version>
+		 </dependency>
+        <!-- 转义过滤 -->
+        <dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>1.1</version>
+		</dependency>
+		<!-- mysql  -->
+		 <dependency>
+	          <groupId>mysql</groupId>
+	          <artifactId>mysql-connector-java</artifactId>
+	      </dependency> 
+	      <!-- druid --> 
+       <dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>druid</artifactId>
+		    <version>1.1.16</version>
+		</dependency>
 
 
 		<!-- 开发时候需要使用的tomcat -->

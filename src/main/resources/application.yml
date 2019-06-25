@@ -1,3 +1,19 @@
 spring:
   profiles:
     active: pro
+  freemarker:
+    suffix: .flt
+    # 设置文档类型
+    content-type: text/html
+    # 设置页面编码格式
+    charset: utf-8
+    # 设置页面缓存
+    cache: false
+    #设置模板更新的延时时间
+    settings:
+      template_update_delay: 0
+      # 设置ftl文件路径
+    template-loader-path: classpath:/views/
+    request-context-attribute: req
+  mvc:
+    static-path-pattern: /static/**

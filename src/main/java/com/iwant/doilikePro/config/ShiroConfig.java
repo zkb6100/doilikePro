@@ -62,7 +62,7 @@ public class ShiroConfig {
 		
 		// 配置可以匿名访问的地址 更具实际情况自行添加 目前先放入一些 可能需要过滤的静态资源 anon 表示直接放行
 		filterChainMap.put("/css/**", "anon");
-		filterChainMap.put("/imgs/**", "anon");
+		filterChainMap.put("/images/**", "anon");
 		filterChainMap.put("/js/**", "anon");
 
 		//登录 url 放行
