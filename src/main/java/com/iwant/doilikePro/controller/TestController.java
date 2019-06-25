@@ -3,6 +3,7 @@ package com.iwant.doilikePro.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,12 +17,12 @@ public class TestController {
 	@Autowired
     private AsyncService asyncService;
 	
-	 @RequestMapping("/test")
-	    public String firsttest() {
+	 @RequestMapping("/test/{id}")
+	    public String firsttest(@PathVariable("id") Integer id) {
 		    logger.info("start submit");
 		    asyncService.executeAsync();
 		    logger.info("end submit");
-	        return "firestTest";
+	        return "firestTest"+id;
 	    }
 	 
 	 @RequestMapping("/test1")
