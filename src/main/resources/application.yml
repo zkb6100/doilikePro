@@ -12,7 +12,7 @@ spring:
     #设置模板更新的延时时间
     settings:
       template_update_delay: 0
-      # 设置ftl文件路径
+    # 设置ftl文件路径
     template-loader-path: classpath:/views/
     request-context-attribute: req
   mvc:

@@ -14,7 +14,7 @@ import com.alibaba.druid.support.http.WebStatFilter;
 
 @Configuration
 public class DruidConfig {
-		//测试 地址 http://localhost:8080/druid/login.html  原文地址: https://www.cnblogs.com/feiyangbahu/p/9842363.html
+		//测试 地址 http://localhost:你配置的端口/druid/login.html  原文地址: https://www.cnblogs.com/feiyangbahu/p/9842363.html
 	 	@Bean
 	    public ServletRegistrationBean druidServlet() {
 	 		// 主要实现web监控的配置处理
