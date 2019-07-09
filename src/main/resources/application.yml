@@ -17,3 +17,8 @@ spring:
     request-context-attribute: req
   mvc:
     static-path-pattern: /static/**
+  rabbitmq:
+    host: 123.207.0.121
+    port: 5672
+    username: doilike
+    password: webdoilike

@@ -22,10 +22,10 @@ public class TestController {
 		    logger.info("start submit");
 		    asyncService.executeAsync();
 		    logger.info("end submit");
-	        return "firestTest"+id;
+	        return "firestTest:id-"+id;
 	    }
 	 
-	 @RequestMapping("/test1")
+	 @RequestMapping("/test")
 	    public String firsttest1() {
 		    logger.info("start submit");
 		    asyncService.myexecuteAsync();
