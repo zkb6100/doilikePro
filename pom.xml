@@ -19,15 +19,33 @@
 	</properties>
 
 	<dependencies>
+	
+		<!-- redis -->
+		<dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+
+        </dependency> 
+	
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
+		<!-- 	<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
-		    </exclusions>  
+		    </exclusions>   -->
+		    <!--排除这个slf4j-log4j12-->
+        <exclusions>
+            <exclusion>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+            </exclusion>
+        </exclusions>
 		</dependency>
 		<!-- 引入log4j2依赖 --> 
 	      <dependency> <!-- 引入log4j2依赖 --><!-- b. -->
@@ -61,12 +79,17 @@
 		    <version>2.6</version>
 		</dependency>
 		<!-- JSON -->
-		<dependency> 
-			<groupId>net.sf.json-lib</groupId> 
-			<artifactId>json-lib</artifactId> 
-			<version>2.4</version> 
-			<classifier>jdk15</classifier> 
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.51</version>
 		</dependency>
+		
+		<dependency>        
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		</dependency>
+		
         <!-- 转义过滤 -->
         <dependency>
 		    <groupId>org.apache.commons</groupId>

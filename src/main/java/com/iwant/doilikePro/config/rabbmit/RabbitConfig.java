@@ -1,4 +1,4 @@
-package com.iwant.doilikePro.config;
+package com.iwant.doilikePro.config.rabbmit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

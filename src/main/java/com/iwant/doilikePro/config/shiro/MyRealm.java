@@ -1,4 +1,4 @@
-package com.iwant.doilikePro.config;
+package com.iwant.doilikePro.config.shiro;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;

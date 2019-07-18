@@ -1,4 +1,4 @@
-package com.iwant.doilikePro.config;
+package com.iwant.doilikePro.config.shiro;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
