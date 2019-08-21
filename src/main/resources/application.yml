@@ -2,7 +2,7 @@ spring:
   profiles:
     active: pro
   freemarker:
-    suffix: .flt
+    suffix: .ftl
     # 设置文档类型
     content-type: text/html
     # 设置页面编码格式
@@ -42,4 +42,8 @@ spring:
       min-idle: 0
     #Redis 超时时间(毫秒)
     timeout: 3000
+mybatis:
+  type-aliases-package: com.iwant.doilikePro.domain
+ # config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mappers/*.xml
       
